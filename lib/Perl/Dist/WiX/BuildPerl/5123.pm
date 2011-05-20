@@ -4,7 +4,7 @@ package Perl::Dist::WiX::BuildPerl::5123;
 
 =begin readme text
 
-Perl::Dist::WiX::BuildPerl::5123 version 1.500
+Perl::Dist::WiX::BuildPerl::5123 version 1.500001
 
 =end readme
 
@@ -16,7 +16,7 @@ Perl::Dist::WiX::BuildPerl::5123 - Files and code for building Perl 5.12.3
 
 =head1 VERSION
 
-This document describes Perl::Dist::WiX::BuildPerl::5123 version 1.500.
+This document describes Perl::Dist::WiX::BuildPerl::5123 version 1.500001.
 
 =begin readme
 
@@ -51,7 +51,7 @@ use Moose::Role;
 use File::ShareDir qw();
 use Perl::Dist::WiX::Asset::Perl qw();
 
-our $VERSION = '1.500';
+our $VERSION = '1.500001';
 $VERSION =~ s/_//sm;
 
 

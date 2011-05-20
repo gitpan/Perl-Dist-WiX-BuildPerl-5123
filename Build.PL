@@ -56,17 +56,20 @@ my $builder = $class->new(
     dist_version_from        => 'lib/Perl/Dist/WiX/BuildPerl/5123.pm',
 	create_readme            => 1,
 	create_license           => 1,
+	# Do not remove. Directories in t/ require it.
+	recursive_test_files     => 1,
 	requires => {
 		'perl'              => '5.010',
 		'Perl::Dist::WiX'   => '1.500',
-		'Moose::Role'       => '1.08',
+		'Moose::Role'       => '2.00',
 		'File::ShareDir'    => '1.02',
 	},
 	configure_requires => {
-		'Module::Build'     => '0.34',
+		'Module::Build'     => '0.36',
 	},
 	build_requires => {
 		'Test::More'        => '0.88',
+		'Test::Perl::Dist'  => '0.300',
 	},
 	meta_merge => {
 		resources => {
@@ -78,7 +81,7 @@ my $builder = $class->new(
 	},
 	share_dir => {
 		module => {
-			'Perl::Dist::WiX::BuildPerl::5123'  => 'share',
+			'Perl::Dist::WiX::BuildPerl::5123'  => 'share-5123',
 		}
 	},
     add_to_cleanup      => [ 'Perl-Dist-WiX-BuildPerl-5123-*', ],
